@@ -1,0 +1,331 @@
+/* color palette 
+
+*/
+
+
+/* Global Styles ------------------------------------- */
+
+
+html{
+    box-sizing: border-box;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+.wrapper{
+    /* max-width: 80%; */
+    width: 100%;
+    margin: 0 auto;
+    /* margin: 0 15% 5% 15%; */
+    padding: 50px 0;
+}
+
+body{
+    color:dark rgb(48, 48, 48);
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    font-size:16px;
+}
+
+/* ---------------IMAGES------------- */
+
+img {
+    width: 300px;
+    /* margin-left: -10%; */
+}
+
+.second-image{
+    width: 55%;
+    float:right;
+    margin-right: -7%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+}
+
+.third-image{
+    width: 55%;
+    float:left;
+    margin-left: 5%;
+}
+
+
+/* -------- HEADINGS ---------- */
+
+    h1{
+        font-size: 70px;
+        font-weight: 900;
+        background-image: linear-gradient(to left, #553c9a, #b393d3);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+
+        /* font-family: 'Caveat', cursive; */
+        /* text-transform: uppercase; */
+    }
+
+    h2{
+        font-size: 40px;
+        font-weight: 700;
+        color:#393939;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        /* background-image: linear-gradient(to left, #553c9a, #b393d3); */
+        /* color: transparent; */
+        /* background-clip: text; */
+        /* -webkit-background-clip: text; */
+        /* font-family: 'Caveat', cursive; */
+        /* text-transform: uppercase; */
+    }
+
+        #h2diff{
+            font-size: 35px;
+            padding-bottom: 5%;
+        }
+
+    h3{
+        text-transform: capitalize;
+        font-size: 20px;
+        color:#7e62cb;
+        font-weight: normal;
+        padding: 0;
+        text-align: left;
+        margin: 2% 0 3%;
+    }        
+        
+
+    h4{
+        text-transform: capitalize;
+        font-size: 20px;
+        color:#7e62cb;
+        font-weight: normal;
+        padding: 0;
+        text-align: center;
+    }        
+        
+
+    /* section > h4{
+        margin-top: 6%;
+    } */
+    
+    
+    h6{
+        font-size:25px;
+        font-weight:700;
+        color:rgb(99, 98, 98);
+        text-align: center;
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+
+
+/* navigation */
+
+a {
+    display: block;
+    padding: 25px;
+    text-align: center;
+  }
+
+.navMenu{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    /* background-color: #e2e7e5d5; */
+    /* width: 100%; */
+    /* margin-left: -3%; */
+    /* margin-top: -1%; */
+    /* text-align: center; */
+    /* color: #5b5b5b; */
+  }
+
+.navMenu a {
+    color: #393939;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    font-weight: 500;
+    display: inline-block;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .navMenu a:hover {
+    color: #fddb3a;
+  }
+
+/* ------------Button------------- */
+
+        button {
+            padding: 17px 40px;
+            border-radius: 5px;
+            border: 0;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.337) 0 0 8px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            font-size: 15px;
+            transition: all .5s ease;
+        }
+
+        
+        button:hover {
+            letter-spacing: 3px;
+            background-color: rgb(85, 60, 154);
+            color: hsl(0, 0%, 100%);
+            box-shadow: rgb(165, 82, 234) 0px 7px 29px 0px;
+        }
+        
+        button:active {
+            letter-spacing: 3px;
+            background-color: rgb(85, 60, 154);
+            color: hsl(0, 0%, 100%);
+            box-shadow: rgb(165, 82, 234) 0px 7px 29px 0px;
+            /* transform: translateY(10px); */
+            transition: 100ms;
+        }
+
+
+        /* #newbutton{
+            float:right;
+            /* text-align: right; */
+            /* margin-right: 5em; */
+            /* display:inline; */
+        /* }  */
+
+/* ----------------- Part 1 -------------------- */
+
+/* Container holding the image and the text */
+/* .main-container{
+    margin-top: 8%;
+    position:relative;
+    text-align: center;
+} */
+
+
+.main-container{
+    background-image: url(../demoimages/pic6.jpg);
+    background-size: cover;
+    background-position: top right;
+    padding: 100px;
+    padding-bottom: 150px;
+    width: 120%;
+    margin-left: -5%;
+    margin-top: 8%;
+    position:relative;
+    text-align: center;
+}
+
+/* centered text */
+/* .text-block{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+.text-block{
+    position: relative;
+    width: 80%;
+}
+
+.subcontainer{
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.467);
+    margin-top: -25px;
+    margin-bottom: 50px;
+}
+
+
+/* ----------------- ABOUT -------------------- */
+
+#projects-container h2{
+    text-align: left;
+    margin-top: -0.2%;
+}
+
+/* ----------------- TEAM -------------------- */
+
+#team-container{
+    margin-top: 6%;
+    margin-bottom: 5%;
+}
+#team-container h2{
+    text-align: left;
+    margin-top: -0.2%;
+}
+
+
+
+/* ----------------- BLOG -------------------- */
+.blog{
+    border-top: 0.5px solid rgba(128, 128, 128, 0.467);
+}
+
+.flex-container{
+    display:flex;
+}
+.flex-item{
+    flex: 1 1 200px;
+    padding: 20px;
+}
+
+
+/* ----------------- LAST -------------------- */
+.last-container{
+    text-align: center;
+    background-color: #c4c3c36a;
+    width: 120%;
+    margin: -10%;
+    padding: 10px;
+    padding-bottom: 40px;
+}
+
+
+
+/* ----------------- CONTACT INFORMATION-------------------- */
+
+.contact-container h3{
+    text-align: center;
+    margin-top: 7%;
+    margin-bottom: 0;
+    margin-left: 3%;
+}
+
+#socialmedia {
+    display: flex;
+    list-style: none;
+    justify-content:center;
+    margin-left: -3%;
+}
+#socialmedia li{
+    padding-left: 25px;
+    display:inline-block;
+    margin: 0;
+}
+
+
+
+/* ----------------- FOOTER-------------------- */
+.footer{
+    text-align: center;
+    background-color: #c4c3c36a;
+    width: 120%;
+    padding: 10px;
+    margin-left: -10%;
+}
+
+/* extra */
+
+p{
+    margin-bottom: 2%;
+    line-height: 2;
+}

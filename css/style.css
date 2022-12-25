@@ -1,0 +1,214 @@
+/* 
+Color Palette
+    https://coolors.co/palette/006d77-83c5be-edf6f9-ffddd2-e29578
+    #006D77 - turquoise
+    #83C5BE - jade green
+    #EDF6F9 - cool grey
+    #FFDDD2 - light peach
+    #E29578 - seashell pink
+    #161a1d - Dark grey
+    #ffffff - white
+*/ 
+
+/* Global Styles
+------------------------------------- */
+html{
+    box-sizing:border-box;
+  }
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body{
+    color: #373737;
+    margin:0;
+    padding:0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+img {
+    width: 300px;
+}
+a:link {
+    color:rgb(0, 39, 87);
+}
+a:visited {
+    color:rgb(133, 36, 133);
+}
+a:hover {
+    color:grey;
+}
+h1,h2{
+    font-family: 'Caveat', cursive;
+    font-weight: 400;
+    margin: 0; /*now you can remove the margin tag in h2 because its already mentioned here */
+}
+h1{
+    font-size: 100px;
+    /* line-height: 1;   */
+    /* if you want to reduce the line height between the h1 and h2, 
+    you can override the line-height value mentioned in body*/
+}
+h2{
+    margin:0;   /* to remove extra space in the heading which is coinciding with padding in content-wrap */
+    font-size: 45px;
+}
+
+h3{
+    margin-bottom: 0;
+}
+
+.item-details h3 + p{
+    font-style: italic;
+}
+
+.item-details h3 ~ p{
+    margin: 0;
+}
+
+.content-wrap {
+    
+    max-width: 800px; /* Here width:800px is switched to max-width for a fluid layout */
+    width: 85%;
+    margin: 0 auto;  /* if its zero - you dont have to give it a unit */
+    padding: 60px 0;
+}
+/* ------------------------------------- */
+header{
+    background-color: #006D77;
+    color: #ffffff;
+}
+
+.divider > section{
+    border-bottom: 1px dashed darkgrey;
+    padding: 25px 0;
+}
+
+.divider > section:last-of-type{
+    border-bottom: none;
+}
+
+
+/* Projects
+------------------------------------- */
+.projects{
+    background-color: #EDF6F9;
+}
+
+.projects a{
+    color: #01572c;
+}
+.projects a:hover{
+    /* color:rgb(192, 14, 14) */   /*applies to all links*/
+}
+
+
+.projects .btn{
+    color:blue;
+    background-color: rgb(255, 255, 44);
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+.projects .btn:hover {
+    background: rgb(221, 221, 11,80%)
+}
+
+.project-item{
+    overflow:hidden;
+}
+
+.project-item h3{
+    margin-top: 0;
+}
+
+
+/* work-experience
+------------------------------------- */
+.work-experience{
+    background-color: #ebe3e0;
+}
+
+
+/* Education
+------------------------------------- */
+
+.education{
+    background-image: url(../placeholder-images/pic1.jpg);
+    background-size: cover;
+    background-position: top right;
+    padding: 100px;
+    padding-bottom: 150px;
+}
+
+.education p{
+    width: 60%;
+}
+
+
+/* Contact info
+------------------------------------- */
+.footer{
+    background-color: #164d48 ;
+    color: #ffffff;
+}
+
+ .footer a{
+    color: white;
+ }  
+
+ .contact-list{
+    list-style-type: none;
+    padding: 0;
+ }
+.contact-list a{
+    padding: 5px;
+    display: inline-block;
+}
+
+.contact-list a:hover{
+    text-decoration: none;
+}
+
+/* Responsive Style
+------------------------------------- */
+
+@media screen and (min-width:750px){
+    header,footer{
+        text-align: center;
+    }
+
+    .project-item img {
+        float:left;
+        margin-right: 20px;
+    }
+
+    .job-item{
+        display:grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 30px;
+    }
+
+    .contact-list{
+        display: flex;
+        justify-content:center;
+    }
+
+    .contact-list a{
+        padding: 15px;
+    }
+}
+
+@media screen and (max-width:749px){
+    h1{
+        font-size: 75px;
+        line-height: 0.9;
+        margin-bottom: 20px;
+    }
+
+    h2{
+        line-height: 1;
+    }
+}
